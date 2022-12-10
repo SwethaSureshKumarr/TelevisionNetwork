@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0.5px;
+}
+
+
+/* header styling */
+
+header {
+    font-family: sans-serif;
+    padding: 40px;
+    text-align: center;
+    background-color: #145f94;
+    color: #ffffff;
+}
+
+main * {
+    font-family: 'Roboto';
+}
+
+
+/* content styling */
+
+.content-wrapper {
+    margin: 40px auto;
+    align-items: center;
+}
+
+
+/* common styling for the cards */
+
+.televison-name {
+    padding: 25px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #145f94;
+}
+
+.television-description {
+    word-spacing: 2.5px;
+    padding: 25px;
+    font-weight: 500;
+}
+
+.card {
+    border: 1px solid #145f94;
+    word-wrap: break-word;
+    margin-bottom: 25px;
+    background-color: #f6f6f6;
+}
+
+@media screen and (max-width:600px) {
+    .card {
+        display: inline-block;
+        width: 90%;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .title {
+        font-size: 16px;
+    }
+    .televison-name {
+        font-size: 18px;
+    }
+    .television-description {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+    .card {
+        display: inline-block;
+        width: 90%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .televison-name {
+        font-size: 24px;
+    }
+    .television-description {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:900px) {
+    /* this selects the first two cards */
+    .card:nth-child(-n+2) {
+        width: 27.5%;
+        margin-right: 10%;
+        float: right;
+    }
+    /* this selects the last 3 cards */
+    .card:nth-last-child(-n+3) {
+        width: 51%;
+        margin-left: 10%;
+    }
+    /* styling for card-2 to appear below the first card */
+    .card-2 {
+        clear: both;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .televison-name {
+        font-size: 24px;
+    }
+    .television-description {
+        font-size: 18px;
+    }
+}
+
+
+/* Footer of the webpage */
+
+footer {
+    height: 10vh;
+}
